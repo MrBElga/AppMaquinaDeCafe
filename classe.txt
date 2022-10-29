@@ -1,0 +1,14 @@
+Maquina_Cafe
+  dados:
+    preço: real;
+    tot_cafes_vendidos: inteiro;
+    tot_faturado: real;
+    ac_valor_inserido: real;
+  funções:
+    obter_preco():real
+    iniciar_nova_venda(preco)
+    receber_moeda(moeda):boolean
+    valor_suficiente():boolean
+    devolver_troco():real
+    obter_tot_faturado():real
+    obter_total_cafes_vendidos():inteiro

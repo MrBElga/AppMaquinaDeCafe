@@ -1,0 +1,14 @@
+mc = Maquina_Cafe
+
+mc.iniciar_nova_venda(1.5)
+enquanto(read()!=CHAVE_SECRETA)
+  print("Compre café por R$ "+mc.obter_preco())
+  enquanto(not mc.valor_suficiente())  
+    print("Insira uma moeda");
+    se mc.receber_moeda(read())==false
+       print("Moeda inválida")
+  print("Pegue seu café");
+  print("Pegue seu troco R$ "+mc.devolver_troco());
+print(mc.obter_tot_faturado())
+print(mc.obter_total_cafes_vendidos())
+
